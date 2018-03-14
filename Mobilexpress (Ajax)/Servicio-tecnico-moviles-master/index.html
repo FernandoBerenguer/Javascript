@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>MobilExpress</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.6/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>   
+</head>
+
+
+<body>
+
+    <nav class="navbar navbar-expand-md bg-success navbar-dark fixed-top" id="menuDesplegable">
+        <a class="navbar-brand" id="menu"><img src="img/icon.png"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+		<span class="navbar-toggler-icon"></span>
+		</button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+			
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">Clientes</a>
+					
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" id="navAltaCliente" href="#">Alta cliente</a>
+                        <a class="dropdown-item" id="navBajaCliente" href="#">Baja Cliente</a>
+                        <a class="dropdown-item" id="navModificarCliente" href="#">Modificar Cliente</a>
+                    </div>
+                </li>
+				
+				<li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">Personal</a>
+					
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" id="navAltaEmpleado" href="#">Alta Empleado</a>
+						<a class="dropdown-item" id="navModificarEmpleado" href="#">Modificar Empleado</a>
+						<a class="dropdown-item" id="navBajaEmpleado" href="#">Baja Empleado</a>
+                    </div>
+                </li>
+				
+				<li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">Proveedores</a>
+					
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" id="navAltaProveedor" href="#">Alta Proveedor</a>
+						<a class="dropdown-item" id="navModificarProveedor" href="#">Modificar Proveedor</a>
+						<a class="dropdown-item" id="navBajaProveedor" href="#">Baja Proveedor</a>                        
+                    </div>
+                </li>
+				
+				<li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">Piezas de Repuesto</a>
+					
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" id="navAltaPieza" href="#">Alta Pieza</a>
+						<a class="dropdown-item" id="navModificarPieza" href="#">Modificar Pieza</a>
+						<a class="dropdown-item" id="navBajaPieza" href="#">Baja Pieza</a>                        
+                    </div>
+                </li>
+				
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">Dispositivos</a>
+					
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" id="navAltaDispositivo" href="#">Alta Dispositivo</a>
+                        <a class="dropdown-item" id="navBajaDispositivo" href="#">Baja Dispositivo</a>
+                        <a class="dropdown-item" id="navModificarDispositivo" href="#">Modificar Dispositivo</a>
+                    </div>
+                </li>
+				
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">Reparaciones</a>
+					
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" id="navAltaReparación" href="#">Nueva Reparación</a>
+                        <a class="dropdown-item" id="navModificarReparación" href="#">Modificar Reparación</a>
+                        <a class="dropdown-item" id="navEliminarReparacion" href="#">Eliminar Reparación</a>
+                    </div>
+                </li>
+                				
+              <!--  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">Contabilidad</a>
+					
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" id="navPago" href="#">Pago</a>
+                        <a class="dropdown-item" id="navCobro" href="#">Cobro</a>
+                    </div>
+                </li>-->
+				
+				<li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">Listados</a>
+					
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" id="navListadoClientes" href="#">Clientes</a>
+                        <a class="dropdown-item" id="navListadoDispositivos" href="#">Dispositivos</a>
+                        <a class="dropdown-item" id="navListadoProveedores" href="#">Proveedores</a>
+						<a class="dropdown-item" id="navListadoEmpleados" href="#">Empleados</a>
+						<a class="dropdown-item" id="navListadoReparaciones" href="#">Reparaciones</a>
+                    </div>
+                </li>
+				
+				
+            </ul>
+        </div>
+    </nav>
+		
+	 <br><br><br>
+	<div id="formularios"></div>
+	
+
+    <div class="jumbotron jumbotron-fluid" id="jumbo">
+        <div class="container">
+            <h1>Reparacion de moviles - MobilExpress</h1>
+            <p>Tu servicio tecnico de confianza. Siempre los mejores precios y calidad.</p>
+            <div id="demo" class="carousel slide" data-ride="carousel">
+
+                <!-- Indicators -->
+                <ul class="carousel-indicators">
+                    <li data-target="#demo" data-slide-to="0" class="active"></li>
+                    <li data-target="#demo" data-slide-to="1"></li>
+                    <li data-target="#demo" data-slide-to="2"></li>
+                </ul>
+
+                <!-- The slideshow -->
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="img/carousel1.jpg" alt="Los Angeles" width="1100" height="500">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/carousel2.jpeg" alt="Chicago" width="1100" height="500">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/carousel3.jpg" alt="New York" width="1100" height="500">
+                    </div>
+                </div>
+
+                <!-- Left and right controls -->
+                <a class="carousel-control-prev" href="#demo" data-slide="prev">
+					<span class="carousel-control-prev-icon"></span>
+				</a>
+                <a class="carousel-control-next" href="#demo" data-slide="next">
+					<span class="carousel-control-next-icon"></span>
+				</a>
+            </div>
+        </div>
+
+    </div>
+
+    <div id="listados">
+        
+
+    </div>
+
+
+    
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="js/codigo.js"></script>
+    <script type="text/javascript" src="js/principal.js"></script>
+
+</body>
+
+</html>

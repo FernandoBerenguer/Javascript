@@ -1,0 +1,71 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+<title>Acciones</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.6/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+<div id="principal">
+<h1>Menu</h1>
+
+<form name="frmAcciones">
+
+<fieldset style="width: 35%; float: left;">
+	<legend>Registros</legend>
+	<div class="btn-group">
+		<button type="button" class="btn btn-primary" id="btnAltaCond" name="btnAltaCond" onclick="altaCond();">Alta conductor</button>
+
+		<button type="button" class="btn btn-primary" id="btnAltaGuardia" name="btnAltaGuardia" onclick="altaGuar();">Alta guardia</button>
+
+		<button type="button" class="btn btn-primary" id="btnRegistrarMulta"  name="btnRegistrarMulta" onclick="registroMulta();">Registrar multa</button>
+
+		<button type="button" class="btn btn-primary" name="btnPagarMulta" onclick="pagarMulta();">Pagar multa</button>
+	</div>
+	</fieldset>
+	
+<fieldset style="width: 16.8%; float:left; margin-left: 15px">
+	<legend>Conductor</legend>
+	<div class="btn-group" >
+		<button type="button" class="btn btn-primary" id="btnSaldoConductor" name="btnSaldoConductor" onclick="mostrarSaldoConductor();">Saldo</button>
+
+		<button type="button" class="btn btn-primary" id="btnPuntosConductor" name="btnPuntosConductor" onclick="mostrarPuntosConductor();">Puntos</button>
+
+		<button type="button" class="btn btn-primary" id="btnListadoConductor" name="btnListadoConductor" onclick="mostrarListadoConductor();">Listado</button>	
+	</div>
+	</fieldset>
+
+<fieldset style="width: 28.5%; float: left;">
+	<legend>Guardia Civil</legend>
+	<div class="btn-group " >
+		<button type="button" class="btn btn-primary" id="btnMultaguardia" name="btnMultaguardia" onclick="multaGuardia();">Multas por Guardia</button>
+
+		<button type="button" class="btn btn-primary" id="btnMultaFecha" name="btnMultaFecha" onclick="multaFecha();">Multas por fecha</button>
+
+		<button type="button" class="btn btn-primary" id="btnListadoGuardia" name="btnListadoGuardia" onclick="mostrarListadoGuardia();">Listado</button>
+	</div>
+	</fieldset>
+
+<fieldset style="width: 10%; float: left;">
+	<legend>Imprimir</legend>
+	<div class="btn-group" >
+	<button type="button" id="btnImprimirMulta" name="btnImprimirMulta" onclick="imprimirMulta();" class="btn btn-primary" >Imprimir</button>
+</fieldset>
+</div>
+</form>
+
+</div>
+
+
+<script type="text/javascript" src="js/objetos.js"></script>
+<script type="text/javascript" src="js/codigo.js"></script>
+
+</body>
+
+</html>

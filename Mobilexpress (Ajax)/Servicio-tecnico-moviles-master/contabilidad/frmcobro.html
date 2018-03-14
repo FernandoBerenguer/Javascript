@@ -1,0 +1,60 @@
+<!-- Formulario cobro -->
+    <form class="form-horizontal" name="frmCobro" id="frmCobro">
+        <fieldset>
+
+            <!-- Form Name -->
+            <legend>Cobro de recibos</legend>
+
+            <div class="form-group">
+                <label class="col-xs-4 control-label" for="importeCobro">Importe</label>
+                <div class="col-xs-4">
+                    <input id="importeCobro" name="importeCobro" placeholder="Nombre" class="form-control input-md" required="" type="text">
+                </div>
+            </div>
+
+			<div class="form-group">
+                <label class="col-xs-4 control-label" for="proveedor">Cliente</label>
+                <select class="form-control col-xs-4 input-md" id="frmCobroSelectCliente">
+					<option>Lista de clientes</option>
+				</select>
+            </div>
+
+			<div class="form-group">
+                <label class="col-xs-4 control-label" for="empleado">Empleado</label>
+                <select class="form-control col-xs-4 input-md" id="frmCobroSelectEmpleado">
+					<option>Lista de empleados</option>
+				</select>
+            </div>
+			
+            <div class="form-group">
+                <label class="col-xs-4 control-label" for="fechaCobro">Fecha de vencimiento</label>
+                <div class="col-xs-4">
+                    <input id="fechaCobro" name="fechaCobro" placeholder="Fecha vencimiento" class="form-control input-md" required="" type="date">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="col-xs-4 control-label" for="estadoCobro">Estado</label>
+                <div class="col-xs-4">
+                    <input id="estadoCobro" name="estadoCobro" placeholder="Estado" class="form-control input-md" required="" type="text">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="col-xs-4 control-label" for="asuntoCobro">Asunto</label>
+                <div class="col-xs-4">
+                    <input id="asuntoCobro" name="asuntoCobro" placeholder="Asunto" class="form-control input-md" required="" type="text">
+                </div>
+            </div>
+
+            <!-- Button -->
+            <div class="form-group">
+                <label class="col-xs-4 control-label" for="altaCobro"></label>
+                <div class="col-xs-4">
+                    <input type="button" id="altaCobro" name="altaCobro" class="btn bg-success btn-primary" value="Aceptar" />
+					<input type="button" name="volver" class="btn bg-success btn-primary" value="Volver" />
+                </div>
+            </div>
+
+        </fieldset>
+    </form>

@@ -1,0 +1,61 @@
+
+    <!-- Formulario pago -->
+    <form class="form-horizontal" name="frmPago" id="frmPago">
+        <fieldset>
+
+            <!-- Form Name -->
+            <legend>Pago de recibos</legend>
+
+            <div class="form-group">
+                <label class="col-xs-4 control-label" for="importePago">Importe</label>
+                <div class="col-xs-4">
+                    <input id="importePago" name="importePago" placeholder="Nombre" class="form-control input-md" required="" type="text">
+                </div>
+            </div>
+			
+			 <div class="form-group">
+                <label class="col-xs-4 control-label" for="proveedor">Proveedor</label>
+                <select class="form-control col-xs-4 input-md" id="frmPagoSelectProveedor">
+					<option>Lista de proveedores</option>
+				</select>
+            </div>
+
+			<div class="form-group">
+                <label class="col-xs-4 control-label" for="empleado">Empleado</label>
+                <select class="form-control col-xs-4 input-md" id="frmPagoSelectEmpleado">
+					<option>Lista de empleados</option>
+				</select>
+            </div>
+			
+            <div class="form-group">
+                <label class="col-xs-4 control-label" for="fechaPago">Fecha de vencimiento</label>
+                <div class="col-xs-4">
+                    <input id="fechaPago" name="fechaPago" placeholder="Fecha vencimiento" class="form-control input-md" required="" type="date">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="col-xs-4 control-label" for="estadoPago">Estado</label>
+                <div class="col-xs-4">
+                    <input id="estadoPago" name="estadoPago" placeholder="Estado" class="form-control input-md" required="" type="text">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="col-xs-4 control-label" for="asuntoPago">Asunto</label>
+                <div class="col-xs-4">
+                    <input id="asuntoPago" name="asuntoPago" placeholder="Asunto" class="form-control input-md" required="" type="text">
+                </div>
+            </div>
+
+            <!-- Button -->
+            <div class="form-group">
+                <label class="col-xs-4 control-label" for="altaPago"></label>
+                <div class="col-xs-4">
+                    <input type="button" id="altaPago" name="altaPago" class="btn bg-success btn-primary" value="Aceptar" />
+					<input type="button" name="volver" class="btn bg-success btn-primary" value="Volver" />
+                </div>
+            </div>
+
+        </fieldset>
+    </form>

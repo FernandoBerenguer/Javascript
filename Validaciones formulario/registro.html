@@ -1,0 +1,260 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="es-es" xml:lang="es-es">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="css/styles.css" />
+<link rel="stylesheet" type="text/css" href="css/styles.php" />
+
+    <meta name="keywords" content="moodle, Nueva cuenta " />
+    <title>Nueva cuenta</title>
+    
+<script type="text/javascript" src="js/codigo.js"></script>
+
+</head>
+
+<body  class="login course-1 notloggedin dir-ltr lang-es_es_utf8" id="login-signup">
+
+<div id="page">
+	<!-- START OF HEADER -->
+    <div id="header" class=" clearfix">        
+    	<h1 class="headermain">Nueva cuenta</h1>
+        <div class="headermenu">
+        	<div class="logininfo">
+        		Ud. no está en el sistema. (<a  href="#">Entrar</a>)
+        	</div>
+        </div>
+    </div>    
+    <div class="navbar clearfix">
+        <div class="breadcrumb">
+        		<h2 class="accesshide " >Usted está aquí</h2> 
+        		<ul>
+					<li class="first">
+						<a  onclick="this.target='_top'" href="#">INFORMÁTICA</a>
+					</li>
+					<li> 
+						<span class="accesshide " >/&nbsp;</span>
+						<span class="arrow sep">&#x25BA;</span> 
+						<a  onclick="this.target='_top'" href="#">Entrar</a>
+					</li>
+					<li> 
+						<span class="accesshide " >/&nbsp;</span>
+						<span class="arrow sep">&#x25BA;</span> Nueva cuenta
+					</li>
+				</ul>
+		</div>
+        <div class="navbutton">
+        	<div class="langmenu">
+        		<form action="#" method="get"  id="chooselang" class="popupform">
+        			<div>
+        				<select id="chooselang_jump" name="jump" onchange="self.location=document.getElementById('chooselang').jump.options[document.getElementById('chooselang').jump.selectedIndex].value;">
+						   <option value="#">English (en)</option>
+						   <option value="#" selected="selected">Español - España (es_es)</option>
+						   <option value="#">Español - Internacional (es)</option>
+						</select>
+						<input type="hidden" name="sesskey" value="mhKKfHJ3K4" />
+						<div id="noscriptchooselang" style="display: inline;">
+							<input type="submit" value="Ir" />
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+    </div>
+    <!-- END OF HEADER -->
+    <!-- START OF CONTENT -->
+    <div id="content">
+		<form action="submit.html" method="post" accept-charset="utf-8" id="mform1" class="mform">
+		
+			<fieldset class="clearfix" >
+				<legend class="ftoggler">Crear un nuevo usuario y contraseña para acceder al sistema</legend>
+				<div class="fcontainer clearfix">		
+					<div class="fitem required">
+						<div class="fitemtitle">
+							<label for="id_username">Nombre de usuario
+								<img class="req" title="Debe suministrar un valor aquí." alt="Debe suministrar un valor aquí." src="css/req.gif" /> 
+							</label>
+						</div>
+					<div class="felement ftext"> 
+						<input maxlength="100" size="12" name="username" type="text" id="id_username" />  <!--- AQUI -->
+					</div>
+				</div>
+				<div class="fitem">
+					<div class="fitemtitle">
+    					<div class="fstaticlabel">
+      					  <label></label>
+    					</div>
+					</div>
+			        <div class="felement fstatic">
+				      La contrase&ntilde;a deber&iacute;a tener al menos 6 caracter(es)&nbsp;
+				    </div>
+	  			</div>
+	
+			  <div class="fitem required">
+			    <div class="fitemtitle">
+			      <label for="id_password">Contrase&ntilde;a<img class="req" title="Debe suministrar un valor aqu&iacute;." alt="Debe suministrar un valor aqu&iacute;." src="css/req.gif" /></label>
+			    </div>
+			    <div class="felement fpassword">
+			      <input maxlength="32" size="12" name="password" type="password" id="id_password" /> <!--- AQUI -->
+			    </div>
+	  		  </div>
+	  		  <div class="fitem required">
+				 <div class="fitemtitle">
+			      <label for="id_password2">Contrase&ntilde;a (de nuevo)<img class="req" title="Debe suministrar un valor aqu&iacute;." alt="Debe suministrar un valor aqu&iacute;." src="css/req.gif" /></label>
+			     </div>
+			     <div class="felement fpassword">
+			      <input maxlength="32" size="12" name="password2" type="password" id="id_password2" /> <!--- AQUI -->
+			     </div>
+			   </div>
+			   </div>
+			   </fieldset>
+	  			<fieldset class="clearfix">
+	    			<legend class="ftoggler">Por favor, rellene los siguientes datos</legend>
+	
+	 	
+				    <div class="fcontainer clearfix">
+				      <div class="fitem required">
+				        <div class="fitemtitle">
+				          <label for="id_email">Correo electr&oacute;nico<img class="req" title="Debe suministrar un valor aqu&iacute;." alt="Debe suministrar un valor aqu&iacute;." src="css/req.gif" /></label>
+				        </div>
+				
+				        <div class="felement ftext">
+				          <input maxlength="100" size="25" name="email" type="text" id="id_email" /> <!--- AQUI -->
+				        </div>
+				      </div>
+				
+				      <div class="fitem required">
+				        <div class="fitemtitle">
+				          <label for="id_email2">Correo (de nuevo)<img class="req" title="Debe suministrar un valor aqu&iacute;." alt="Debe suministrar un valor aqu&iacute;." src="css/req.gif" /></label>
+				        </div>
+				
+				        <div class="felement ftext">
+				          <input maxlength="100" size="25" name="email2" type="text" id="id_email2" /> <!--- AQUI -->
+				        </div>
+				      </div>
+				
+				      <div class="fitem required">
+				        <div class="fitemtitle">
+				          <label for="id_firstname">Nombre<img class="req" title="Debe suministrar un valor aqu&iacute;." alt="Debe suministrar un valor aqu&iacute;." src="css/req.gif" /></label>
+				        </div>
+				
+				        <div class="felement ftext">
+				          <input maxlength="100" size="30" name="firstname" type="text" id="id_firstname" /><!--- AQUI -->
+				        </div>
+				      </div>
+				
+				      <div class="fitem required">
+				        <div class="fitemtitle">
+				          <label for="id_lastname">Apellidos<img class="req" title="Debe suministrar un valor aqu&iacute;." alt="Debe suministrar un valor aqu&iacute;." src="css/req.gif" /></label>
+				        </div>
+				
+				        <div class="felement ftext">
+				          <input maxlength="100" size="30" name="lastname" type="text" id="id_lastname" /> <!----- AQUI ------>
+				        </div>
+				      </div>
+				
+				      <div class="fitem required">
+				        <div class="fitemtitle">
+				          <label for="id_city">Ciudad<img class="req" title="Debe suministrar un valor aqu&iacute;." alt="Debe suministrar un valor aqu&iacute;." src="css/req.gif" /></label>
+				        </div>
+				
+				        <div class="felement ftext">
+				          <input maxlength="20" size="20" name="city" type="text" id="id_city" /> <!----- AQUI ------>
+				        </div>
+				      </div>
+					  <div class="fitem required">
+				        <div class="fitemtitle">
+				          <label for="id_cp">Código postal<img class="req" title="Debe suministrar un valor aqu&iacute;." alt="Debe suministrar un valor aqu&iacute;." src="css/req.gif" /></label>
+				        </div>
+				
+				        <div class="felement ftext">
+				          <input maxlength="20" size="20" name="cp" type="text" id="id_cp" /> <!----- AQUI ------>
+				        </div>
+				      </div>
+
+				      <div class="fitem required">
+				        <div class="fitemtitle">
+				          <label for="id_country">Pa&iacute;s<img class="req" title="Debe suministrar un valor aqu&iacute;." alt="Debe suministrar un valor aqu&iacute;." src="css/req.gif" /></label>
+				        </div>
+	
+				        <div class="felement fselect">
+				          <select name="country" id="id_country"> <!----- AQUI ------>
+				            <option value="">
+				              Seleccione su pa&iacute;s
+				            </option>
+				
+				            <option value="SI">
+				              Eslovenia
+				            </option>
+				
+				            <option value="ES" selected="selected">
+				              Espa&ntilde;a
+				            </option>
+				
+				            <option value="US">
+				              Estados Unidos
+				            </option>
+				
+				            <option value="EE">
+				              Estonia
+				            </option>
+				
+				            <option value="ET">
+				              Etiop&iacute;a
+				            </option>
+				
+				            <option value="RU">
+				              Federaci&oacute;n Rusa
+				            </option>
+				
+				            <option value="FJ">
+				              Fiji
+				            </option>
+				
+				            <option value="PH">
+				              Filipinas
+				            </option>
+				
+				            <option value="FI">
+				              Finlandia
+				            </option>
+				
+				            <option value="FR">
+				              Francia
+				            </option>        
+				          </select>
+				        </div>
+				      </div>
+	
+	      </div>
+	  </fieldset>
+	
+	  <fieldset class="hidden">
+	    <div>
+	      <div class="fitem">
+	        <div class="fitemtitle">
+	          <div class="fgrouplabel"></div>
+	        </div>
+	
+	        <fieldset class="felement fgroup">
+	          <input name="submitbutton" value="Crear cuenta" type="submit" id="id_submitbutton" />  <!----- AQUI ------>
+	          <input name="cancel" value="Cancelar" type="reset" id="id_cancel" />
+	        </fieldset>
+	      </div>
+	
+	      <div class="fdescription required">
+	        En este formulario hay campos obligatorios
+	      </div>
+	    </div>
+	  </fieldset>
+	</form>
+</div>
+
+	<div id="footer">
+		<p class="helplink"></p>
+		<hr />
+		<div class="logininfo">Ud. no está en el sistema. (<a  href="#">Entrar</a>)</div>
+		<div class="homelink"><a  href="#">Página Principal</a></div>
+	</div>
+</div>
+</body>
+</html>

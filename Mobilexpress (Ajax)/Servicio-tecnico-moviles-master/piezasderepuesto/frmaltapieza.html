@@ -1,0 +1,53 @@
+<!-- Formulario alta Pieza -->
+    <form class="form-horizontal" name="frmAltaPieza" id="frmAltaPieza">
+        <fieldset>
+
+            <!-- Form Name -->
+            <legend>Registro nueva Pieza</legend>
+
+            <!-- Text input-->
+            <div class="form-group">
+                <label class="col-xs-4 control-label" for="numSerie">Número de serie</label>
+                <div class="col-xs-4">
+                    <input id="numSerie" name="numSerie" placeholder="Número de serie" class="form-control input-md" required="" type="text">
+                </div>
+            </div>
+			
+            <div class="form-group">
+                <label class="col-xs-4 control-label" for="tipoPieza">Tipo</label>
+                <div class="col-xs-4">
+                    <input id="tipoPieza" name="tipoPieza" placeholder="Tipo" class="form-control input-md" required="" type="text">
+                </div>
+            </div>
+
+            <!-- Text input-->
+            <div class="form-group">
+                <label class="col-xs-4 control-label" for="precioPieza">Precio</label>
+                <div class="col-xs-4">
+                    <input id="precioPieza" name="precioPieza" placeholder="Precio" class="form-control input-md" required="" type="text">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="col-xs-4 control-label" for="idReparacion">ID de reparación</label>
+                <select class="form-control col-xs-4 input-md" id="idReparacionAltaPieza" name="idReparacion">
+				</select>
+            </div>
+
+            <div class="form-group">
+                <label class="col-xs-4 control-label" for="cifProveedor">CIF de proveedor</label>
+                <select class="form-control col-xs-4 input-md" id="cifProveedor" name="cifProveedor">
+				</select>
+            </div>
+
+            <!-- Button -->
+            <div class="form-group">
+                <label class="col-xs-4 control-label" for="altaPieza"></label>
+                <div class="col-xs-4">
+                    <input type="button" id="altaPieza" name="altaPieza" class="btn bg-success btn-primary" value="Aceptar" />
+                    <input type="button" name="volver" class="btn bg-success btn-primary" value="Volver" />
+                </div>
+            </div>			
+
+        </fieldset>
+    </form>

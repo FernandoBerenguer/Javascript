@@ -1,0 +1,26 @@
+<!-- Formulario listado dispositivo -->
+    <form class="form-horizontal" name="frmListadoDispositivos" id="frmListadoDispositivos">
+        <fieldset>
+
+            <!-- Form Name -->
+            <legend>Filtro para listar dispositivos</legend>
+
+            <!-- Text input-->
+             <div class="form-group">
+                <label class="col-xs-4 control-label" for="garantiaDispositivo">¿Tiene garantía?</label>
+                <div class="col-xs-4">
+                    <input id="garantiaDispositivo" name="garantiaDispositivo" placeholder="Escriba S o N,introduzca cualquier otro caracter para un listado normal" class="form-control input-md" required="" type="text">
+                </div>
+            </div>
+
+            <!-- Button -->
+            <div class="form-group">
+                <label class="col-xs-4 control-label" for="listadodispositivos"></label>
+                <div class="col-xs-4">
+                    <input type="button" id="listadoDispositivos" name="listadoDispositivos" class="btn bg-success btn-primary" value="Aceptar" />
+					<input type="button" name="volver" class="btn bg-success btn-primary" value="Volver" id="volverDispositivo"/>
+                </div>
+            </div>
+
+        </fieldset>
+    </form>

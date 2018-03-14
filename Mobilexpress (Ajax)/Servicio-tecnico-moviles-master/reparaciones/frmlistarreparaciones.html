@@ -1,0 +1,26 @@
+<!-- Formulario listado dispositivo -->
+    <form class="form-horizontal" name="frmListadoReparaciones" id="frmListadoReparaciones">
+        <fieldset>
+
+            <!-- Form Name -->
+            <legend>Filtro para listar reparaciones</legend>
+
+            <!-- Text input-->
+             <div class="form-group">
+                <label class="col-xs-4 control-label" for="precioReparacion">Introduzca el precio max </label>
+                <div class="col-xs-4">
+                    <input id="precioReparacion" name="precioReparacion" placeholder="Escriba un numero,introduzca cualquier otro caracter para un listado normal" class="form-control input-md" required="" type="text">
+                </div>
+            </div>
+
+            <!-- Button -->
+            <div class="form-group">
+                <label class="col-xs-4 control-label" for="listadoreparaciones"></label>
+                <div class="col-xs-4">
+                    <input type="button" id="listadoReparaciones" name="listadoReparaciones" class="btn bg-success btn-primary" value="Aceptar" />
+					<input type="button" name="volver" class="btn bg-success btn-primary" value="Volver" id="volverDispositivo"/>
+                </div>
+            </div>
+
+        </fieldset>
+    </form>

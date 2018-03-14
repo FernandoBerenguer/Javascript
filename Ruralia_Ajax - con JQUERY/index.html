@@ -1,0 +1,91 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+    <title>Ajax - Ruralia</title>
+
+
+</head>
+
+<body>
+    <ul id="menu">
+        <li id="mnuAltaPropietario">
+            <div>Alta propietario</div>
+        </li>
+        <li id="mnuAltaCliente">
+            <div>Alta Cliente</div>
+        </li>
+        <li id="mnuAltaUbicacion">
+            <div>Alta Ubicacion</div>
+        </li>
+        <li id="mnuAltaCasa">
+            <div>Alta Casa</div>
+        </li>
+    </ul>
+    <hr/>
+
+    <div id="formularios"></div>
+
+    <form name="frmAltaCliente" id="frmAltaCliente">
+        <label for="txtCodCliente">CodCliente:</label>
+        <input type="text" name="txtCodCliente" size="9" maxlength="9">
+        <br/>
+
+        <label for="txtNombreCliente">Nombre:</label>
+        <input type="text" name="txtNombreCliente">
+        <br/>
+        <label for="txtApellidosCliente">Apellidos:</label>
+        <input type="text" name="txtApellidosCliente">
+        <br/>
+        <label for="txtTelefonoCliente">Telefono:</label>
+        <input type="text" name="txtTelefonoCliente">
+        <br/>
+        <input type="button" name="btnAceptarCliente" id="btnAceptarCliente" value="Aceptar">
+    </form>
+    <form name="frmAltaUbicacion" id="frmAltaUbicacion">
+        <label for="txtUbicacion">Ubicacion:</label>
+        <input type="text" name="txtUbicacion">
+        <br/>
+        <input type="button" name="btnAceptarUbicacion" id="btnAceptarUbicacion" value="Aceptar">
+    </form>
+
+    <form name="frmAltaCasa" id="frmAltaCasa">
+        <label for="cmbPropietario">Propietario:</label>
+        <select name="cmbPropietario" id="cmbPropietario">
+        
+    </select>
+        <br/>
+        <label for="cmbUbicaciones">Ubicaciones:</label>
+        <select name="cmbUbicaciones" id="cmbUbicaciones">
+        
+    </select>
+        <br/>
+        <label for="txtHabitaciones">Habitaciones:</label>
+        <input type="text" name="txtHabitaciones" id="txtHabitaciones">
+        <br/>
+        <label for="chkPiscina">Piscina:</label>
+        <input type="checkbox" name="chkPiscina" id="chkPiscina" value="N">
+        <br/>
+        <label for="txtPrecio">Precio:</label>
+        <input type="text" name="txtPrecio" id="txtPrecio" value="0,00">
+        <br/>
+        <label for="txtDescripcion">Descripcion:</label>
+        <textarea name="txtDescripcion" id="txtDescripcion"></textarea>
+        <br/>
+        <input type="button" name="btnAltaCasa" id="btnAltaCasa" value="Aceptar">
+    </form>
+
+
+    <div id="resultado"></div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="js/objetos.js"></script>
+    <script type="text/javascript" src="js/ajax.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+
+</body>
+
+</html>

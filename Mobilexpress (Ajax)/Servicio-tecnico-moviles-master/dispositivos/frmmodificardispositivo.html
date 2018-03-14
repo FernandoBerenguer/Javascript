@@ -1,0 +1,71 @@
+<!-- Formulario Modificar dispositivo -->
+    <form class="form-horizontal" name="frmModificarDispositivo" id="frmModificarDispositivo">
+        <fieldset>
+
+            <!-- Form Name -->
+            <legend>Modificar dispositivo</legend>
+
+            <!-- Text input-->
+            <div class="form-group">
+                <label class="col-xs-4 control-label" for="idDispositivo">ID</label>
+                <div class="col-xs-4">
+                    <input id="idDispositivo" name="idDispositivo" placeholder="ID" class="form-control input-md" required="" type="text">
+                </div>
+            </div>
+            
+            <div class="form-group">
+                <label class="col-xs-4 control-label" for="marcaDispositivo">Marca del dispositivo</label>
+                <div class="col-xs-4">
+                    <input id="marcaDispositivo" name="marcaDispositivo" placeholder="Marca" class="form-control input-md" required="" type="text">
+                </div>
+            </div>
+
+            <!-- Text input-->
+            <div class="form-group">
+                <label class="col-xs-4 control-label" for="modeloDispositivo">Modelo</label>
+                <div class="col-xs-4">
+                    <input id="modeloDispositivo" name="modeloDispositivo" placeholder="Modelo" class="form-control input-md" required="" type="text">
+                </div>
+			</div>
+			
+            <!-- Radiobutton garantia -->
+            <div class="form-group">
+                <label class="col-xs-4 control-label" for="rbtGarantia">Garantia</label>
+                <div class="col-xs-4">
+                    <label class="radio-inline" for="rbtGarantia-0">
+						<input name="rbtGarantia" id="rbtGarantia" value="S" type="radio">
+							Si
+					</label>
+					
+                    <label class="radio-inline" for="rbtGarantia-1">
+						<input name="rbtGarantia" id="rbtGarantia" value="N" checked="checked" type="radio">
+							No
+					</label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="col-xs-4 control-label" for="fechaEntradaDispositivo">Fecha de entrada</label>
+                <div class="col-xs-4">
+					<input id="fechaEntradaDispositivo" name="fechaEntradaDispositivo" placeholder="Fecha entrada" class="form-control input-md" required="" type="date">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="col-xs-4 control-label" for="fechaSalidaDispositivo">Fecha de salida</label>
+                <div class="col-xs-4">
+                   <input id="fechaSalidaDispositivo" name="fechaSalidaDispositivo" placeholder="Fecha salida" class="form-control input-md" required="" type="date">
+                </div>
+            </div>
+
+            <!-- Button -->
+            <div class="form-group">
+                <label class="col-xs-4 control-label" for="modificarDispositivo"></label>
+                <div class="col-xs-4">
+                    <input type="button" id="modificarDispositivo" name="modificarDispositivo" class="btn bg-success btn-primary" value="Aceptar" />
+					<input type="button" name="volver" class="btn bg-success btn-primary" value="Volver" />
+                </div>
+            </div>
+
+        </fieldset>
+    </form>

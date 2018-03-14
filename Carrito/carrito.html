@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Carrito de la compra</title>
+	<meta charset="utf-8">
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.6/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
+		
+</head>
+<body>
+	
+	<form name="frmCompra">
+	<div class="form-group">
+	Producto:
+	<input type="text" name="producto" id="producto"><br><br>
+	</div><div class="form-group">
+	Unidades:
+	<input type="text" name="unidades" id="unidades"><br><br></div>
+
+	<input type="button" class="btn btn-primary" name="comprar" id="comprar" value="Comprar"><br><br>
+	<input type="button" class="btn btn-info" name="verCarrito" id="verCarrito" value="Ver Carrito">
+	<input type="button" class="btn btn-danger" name="vaciarCarrito" id="vaciarCarrito" value="Vaciar Carrito">
+	
+	</form>
+
+	<div id="capa"></div>
+	<script src="cookies.js"></script>
+	<script type="text/javascript">
+
+var oAlmacen =[];
+document.getElementById("comprar").addEventListener("click", comprarProducto,false);
+document.getElementById("verCarrito").addEventListener("click", verCarrito,false);
+document.getElementById("vaciarCarrito").addEventListener("click", vaciarCarrito,false);
+
+var capaMostrar= document.getElementById("capa");
+
+function comprarProducto(){
+	var prod = document.getElementById("producto").value;
+	var cant = document.getElementById("unidades").value;
+
+	document.getElementById("producto").value="";
+	document.getElementById("unidades").value="";
+
+	if (prod == "" || cant == "")
+		alert("Debe rellenar los campos");
+	else{
+
+		var valor = getCookie(prod);
+
+		if (valor == "")
+		setCookie(prod, cant, 10);
+		else{
+		var total=(parseInt(valor)+parseInt(cant));
+		setCookie(prod, total, 10);
+		}	
+	}
+	capaMostrar.innerHTML="Articulo comprado correctamente";
+}
+
+function verCarrito(){
+
+	oAlmacen=document.cookie.split(";");
+
+	var nombreCookie;
+	var valorCookie;
+	var tabla='<table class="table table-striped"><thead><tr><th>Producto</th><th>Unidades</th></tr></thead>';
+	for( i=0; i < oAlmacen.length; i++ )
+	{
+	    nombreCookie = oAlmacen[i].split("=")[0];
+	    valorCookie = oAlmacen[i].split("=")[1];
+
+	    tabla+="<tbody><tr><td>"+nombreCookie+"</td><td>"+valorCookie+"</td></tr></tbody>";
+	}
+	tabla+="</table>";
+	pintarTabla(tabla);
+}
+
+function vaciarCarrito(){
+	oAlmacen=document.cookie.split(";");
+	for( i=0; i < oAlmacen.length; i++ )
+	{
+		var prod = oAlmacen[i].split("=")[0];
+		deleteCookie(prod);
+	}
+	capaMostrar.innerHTML="Carrito borrado correctamente";
+}
+
+function pintarTabla(cadena){
+	
+	
+
+	if (document.cookie.length == 0) {
+	
+		cadena="El carrito esta vacio";
+	}
+
+	capaMostrar.innerHTML=cadena;
+}
+
+	</script>
+</body>
+</html>

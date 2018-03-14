@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Paint</title>	
+	<link type="text/css" rel="stylesheet" href="style.css"/>
+	<meta charset="utf-8">
+</head>
+<body>
+
+<div id ="menu" class="menu">
+	<div id="color1"></div>
+	<div id="color2"></div>
+	<div id="color3"></div>
+	<div id="color4"></div><br><br>
+	<label>Tamaño del lapiz</label>
+	<input type="text" id="lapiz" name="size" value="10">
+	<input type="button" name="borrar" id="borrar" value="Borrar">
+</div>
+
+<div id="pintando">
+		
+	
+</div>	
+	
+<script type="text/javascript">
+	
+//VARIABLES GLOBALES
+var botonPulsado = -1;
+var color ="";
+var size="";
+verde();
+
+// AJUSTAR AL TAMAÑO DE LA VENTANA
+var y = window.innerHeight;  
+var x = window.innerWidth; 	
+	document.getElementById("pintando").style.height = y-50+"px";
+	document.getElementById("pintando").style.width = x-20+"px";
+
+window.addEventListener("resize",ajustarCapa,false);
+function ajustarCapa(){
+  var y = window.innerHeight;  
+  var x = window.innerWidth;
+		document.getElementById("pintando").style.height = y-20+"px";
+		document.getElementById("pintando").style.width = x-20+"px";	
+}
+//CANCELAR EL MENU DE OPCIONES DEL BTN DERECHO DEL RATON
+document.oncontextmenu =function (){ 
+	return false;
+}
+
+//botones de colores
+window.document.getElementById('color1').addEventListener("click",negro,false);
+window.document.getElementById('color2').addEventListener("click",verde,false);
+window.document.getElementById('color3').addEventListener("click",azul,false);
+window.document.getElementById('color4').addEventListener("click",amarillo,false);
+window.document.getElementById('borrar').addEventListener("click",borrarCapa,false);
+
+function amarillo(){
+	color="yellow";
+	borde(color4);
+}
+function azul(){
+	color="blue";
+	borde(color3);
+}
+function verde(){
+	color="green";
+	borde(color2);
+}
+function negro(){
+	color="black";
+	borde(color1);
+}
+
+
+function borde (color){
+
+	color1.classList.remove("bordeado");
+	color2.classList.remove("bordeado");
+	color3.classList.remove("bordeado");
+	color4.classList.remove("bordeado");
+	color.classList.add("bordeado");
+}
+
+var html = document.getElementsByTagName("html");
+html[0].addEventListener('mouseup', dejarDePulsar, false);
+
+//SACAR EL BOTON PULSADO
+window.document.getElementById("pintando").addEventListener('mousedown',sacarBotonPulsado,false);
+function sacarBotonPulsado(evento){
+	var oE =  window.event || evento;
+	botonPulsado = oE.button;
+}
+
+//DEJAR DE PULSAR EL BOTON
+window.document.getElementById("pintando").addEventListener('mouseup',dejarDePulsar,false);
+function dejarDePulsar(){
+	 botonPulsado = -1;		 
+}
+
+//SACAR COORDENADAS
+window.document.getElementById("pintando").addEventListener('mousemove',sacarCordenadas,false)
+function sacarCordenadas(evento){
+	var oE =  window.event || evento;
+	size = document.getElementById("lapiz").value;
+	
+		 coordenadaX=oE.clientX;	//	<!-- guardamos la coordenada x   -->
+		 coordenadaY=oE.clientY;	//	<!-- guardamos la coordenada y  -->
+		 
+		if(botonPulsado == 0)	 
+			pintandor(coordenadaX,coordenadaY,oE);	 		 
+		if(botonPulsado == 2)
+			borrar(oE);
+	
+}
+
+//pintandoR
+function pintandor(coordenadaX,coordenadaY,oE){
+	if(color != ""){	
+		//if(oE.target.className != "menu"){		
+		document.getElementById("pintando").innerHTML += '<div class="capas" style="top:'+coordenadaY+'px'+';left:'+coordenadaX+'px'+';background:'+color+'; width : '+size+'px; height : '+size+'px; "></div>';
+	}
+}
+
+//BORRAR
+function borrar(oE){ 
+	var capaParaEliminar = oE.target;
+	if(oE.target.className == "capas")
+		capaParaEliminar.parentNode.removeChild(capaParaEliminar);
+		
+}
+
+//limpiar la pantalla
+function borrarCapa (){
+	document.getElementById("pintando").innerHTML="";
+}
+
+</script>
+
+
+</body>
+</html>

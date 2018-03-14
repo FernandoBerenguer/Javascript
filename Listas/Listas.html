@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ejercicio Nodos</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="estilos.css">
+</head>
+<body>
+
+<div id="origen">
+	
+	<ul>
+		<li>Uno</li>
+		<li>Dos</li>
+		<li>Tres</li>
+	</ul>
+</div>
+<div id="destino">
+	<ul></ul>
+</div>
+<input type="checkbox" value="" id="copia" >Copiar
+
+<script type="text/javascript">
+	var oListado = document.querySelectorAll("ul")[0];
+	var oListado2 = document.querySelectorAll("ul")[1];
+	var oCopia = document.querySelector('input');
+	oListado.addEventListener('click', bajarLista, false);
+	oListado2.addEventListener('click', subirLista, false);
+	var x=null;
+
+	function bajarLista(oE){
+		if (oE.target.nodeName == "LI"){ 
+			if (oCopia.checked) {
+				x=oE.target;
+				var xC= x.cloneNode(true);
+				oListado2.appendChild(xC);
+			}
+			else{
+				x=oE.target;
+				oListado2.appendChild(x);
+			}
+		}
+	}
+	function subirLista(oE){
+		if (oE.target.nodeName == "LI"){ 
+			if (oCopia.checked) {
+				x=oE.target;
+				var xC= x.cloneNode(true);
+				oListado.appendChild(xC);
+			}
+			else{
+				x=oE.target;
+				oListado.appendChild(x);
+			}
+		}
+	}
+
+
+</script>
+
+
+</body>
+</html>

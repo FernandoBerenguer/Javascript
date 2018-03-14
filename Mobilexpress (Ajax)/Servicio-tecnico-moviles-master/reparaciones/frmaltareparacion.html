@@ -1,0 +1,61 @@
+<!-- Formulario nueva reparacion -->
+    <form class="form-horizontal" name="frmAltaReparacion" id="frmAltaReparacion">
+        <fieldset>
+
+            <!-- Form Name -->
+            <legend>Registro nueva reparacion</legend>
+			
+			 <!-- Text input-->
+            <div class="form-group">
+                <label class="col-xs-4 control-label" for="idReparacion">ID reparacion</label>
+                <div class="col-xs-4">
+                    <input id="idReparacion" name="idReparacion" placeholder="ID" class="form-control input-md" required="" type="text">
+                </div>
+			</div>
+			
+			<div class="form-group">
+                <label class="col-xs-4 control-label" for="solicitante">Solicitante</label>
+                <select class="form-control col-xs-4 input-md" id="solicitanteAlta" name="solicitanteAlta">
+				</select>
+            </div>
+			
+            <div class="form-group">
+                <label class="col-xs-4 control-label" for="repararDispositivo">Dispositivo</label>
+                <select class="form-control col-xs-4 input-md" id="repararDispositivoAlta" name="repararDispositivoAlta">
+				</select>
+            </div>
+
+            <!-- Text input-->
+            <div class="form-group">
+                <label class="col-xs-4 control-label" for="averiaReparacion">Averia</label>
+                <div class="col-xs-4">
+                    <input id="averiaReparacion" name="averiaReparacion" placeholder="Averia" class="form-control input-md" required="" type="text">
+                </div>
+			</div>
+
+            <div class="form-group">
+                <label class="col-xs-4 control-label" for="estadoReparacion">Estado de la reparacion</label>
+                <div class="col-xs-4">
+                    <input id="estadoReparacion" name="estadoReparacion" placeholder="Estado" class="form-control input-md" required="" type="text">
+                </div>
+			</div>
+				
+            
+					
+            <div class="form-group">
+                <label for="col-xs-4 control-label comment">Comentarios</label>
+                <textarea class="col-xs-4 form-control input-md" id="comentarioReparacion" name="comentarioReparacion" rows="3" required=""></textarea>
+            </div>
+					
+					
+            <!-- Button -->
+            <div class="form-group">
+                <label class="col-xs-4 control-label" for="altaReparacion"></label>
+                <div class="col-xs-4">
+					<input type="button" id="altaReparacion" name="altaReparacion" class="btn bg-success btn-primary" value="Aceptar" />
+					<input type="button" name="volver" class="btn bg-success btn-primary" value="Volver" />
+                </div>
+            </div>
+
+        </fieldset>
+    </form>
