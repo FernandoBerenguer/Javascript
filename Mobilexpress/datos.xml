@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<datosIniciales>
+	<Clientes>
+        <cliente>
+            <nombre>Fernando</nombre>
+            <apellidos>Berenguer</apellidos>
+			<nif>11111111B</nif>
+			<telefono>999999999</telefono>
+			<direccion>Calle 1</direccion>			
+        </cliente>
+		
+		<cliente>
+            <nombre>Adrian</nombre>
+            <apellidos>Giampaslia</apellidos>
+			<nif>22222222B</nif>
+			<telefono>666666666</telefono>
+			<direccion>Calle 2</direccion>			
+        </cliente>
+		
+		<cliente>
+            <nombre>Jose Antonio</nombre>
+            <apellidos>Campano</apellidos>
+			<nif>33333333C</nif>
+			<telefono>666999666</telefono>
+			<direccion>Calle 3</direccion>			
+        </cliente>
+	</Clientes>
+
+
+
+    <Empleados>
+        <empleado>
+            <nombre>Carlos</nombre>
+            <apellidos>Rodriguez</apellidos>
+			<nif>44444444H</nif>
+			<telefono>987654321</telefono>
+			<direccion>Calle JavaScript</direccion>
+			<ivan>0000E</ivan>
+			<cargo>Messi JS</cargo>
+        </empleado>
+		
+		<empleado>
+            <nombre>Juan</nombre>
+            <apellidos>Vilches</apellidos>
+			<nif>55555555G</nif>
+			<telefono>965236124</telefono>
+			<direccion>Calle PHP</direccion>
+			<ivan>0000W</ivan>
+			<cargo>DJ SESSION</cargo>
+        </empleado>
+		
+		<empleado>
+            <nombre>David</nombre>       
+            <apellidos>De Vega</apellidos>
+			<nif>66666666T</nif>
+			<telefono>658745698</telefono>
+			<direccion>Calle Bootstrap</direccion>
+			<ivan>0000Q</ivan>
+			<cargo>Profesor vale</cargo>
+        </empleado>
+	</Empleados>
+	
+	
+	
+	<Proveedor>
+		<proveedor>
+			<tipo>Pantallas</tipo>
+			<nombre>ScreenDispatch</nombre>
+			<cif>56789098B</cif>
+		</proveedor>
+		
+		<proveedor>
+			<tipo>Botones</tipo>
+			<nombre>Joystick's SL</nombre>
+			<cif>12343254B</cif>
+		</proveedor>
+		
+		<proveedor>
+			<tipo>Carcasas</tipo>
+			<nombre>Chen Li</nombre>
+			<cif>34234654B</cif>
+		</proveedor>
+	</Proveedor>
+	
+	
+	
+	<Piezas>
+		<pieza>
+			<tipo>Grande</tipo>
+			<precio>Bateria</precio>
+			<id>1111</id>
+		</pieza>
+		
+		<pieza>
+			<tipo>Mediana</tipo>
+			<precio>Bateria</precio>
+			<id>1112</id>
+		</pieza>
+		
+		<pieza>
+			<tipo>Pequeña</tipo>
+			<precio>Bateria</precio>
+			<id>1113</id>
+		</pieza>
+	</Piezas>
+	
+	
+	
+	<Dispositivos>
+		<dispositivo>
+			<marca>Sony</marca>
+		    <modelo>Z</modelo>
+			<garantia>S</garantia>
+		    <entrada>2011-03-12</entrada>
+		   <salida>2012-01-04</salida>
+		</dispositivo>
+		
+		<dispositivo>
+			<marca>Samsung</marca>
+		    <modelo>Galaxy S8</modelo>
+			<garantia>N</garantia>
+		    <entrada>2011-03-12</entrada>
+		   <salida>2012-01-04</salida>
+		</dispositivo>
+		
+		<dispositivo>
+			<marca>Lg</marca>
+		    <modelo>3310</modelo>
+			<garantia>S</garantia>
+		    <entrada>2011-03-12</entrada>
+		   <salida>2012-01-04</salida>
+		</dispositivo>
+	</Dispositivos>
+	
+	
+	
+	
+	<Reparaciones>
+		<reparacion>
+			<modelo>Lg 3310</modelo>
+			<averia>Panalla rota</averia>
+			<estado>Esperando material</estado>
+			<importePresupuestado>75.50€</importePresupuestado>
+			<comentario>Trae marcas de uso en los laterales</comentario>
+		</reparacion>
+		
+		<reparacion>
+			<modelo>Sony Z</modelo>
+			<averia>Boton desbloqueo no funciona</averia>
+			<estado>Esperando cliente</estado>
+			<importePresupuestado>60€</importePresupuestado>
+			<comentario>Reemplazar la bateria por una nueva</comentario>
+		</reparacion>
+	</Reparaciones>
+	
+	
+	
+	
+	<Pagos>
+		<pago>
+			<importe>10€</importe>
+			<vencimiento>2012-03-12</vencimiento>
+			<estado>estado</estado>
+			<asunto>asunto</asunto>
+			<nifEmpleado>44444444H</nifEmpleado>
+			<nifProveedor>56789098B</nifProveedor>
+		</pago>
+		
+		<pago>
+			<importe>2€</importe>
+			<vencimiento>2012-05-12</vencimiento>
+			<estado>estado</estado>
+			<asunto>asunto</asunto>
+			<nifEmpleado>55555555G</nifEmpleado>
+			<nifProveedor>34234654B</nifProveedor>
+		</pago>
+	</Pagos>
+	
+	
+	
+	
+	<Cobros>
+		<cobro>
+			<importe>10€</importe>
+			<vencimiento>2012-03-2</vencimiento>
+			<estado>estado</estado>
+			<asunto>asunto</asunto>
+			<nifEmpleado>44444444H</nifEmpleado>
+			<nifCliente>22222222B</nifCliente>
+		</cobro>
+		
+		<cobro>
+			<importe>2€</importe>
+			<vencimiento>2012-05-1</vencimiento>
+			<estado>estado</estado>
+			<asunto>asunto</asunto>
+			<nifEmpleado>55555555G</nifEmpleado>
+			<nifCliente>11111111B</nifCliente>
+		</cobro>
+	</Cobros>
+		
+</datosIniciales>
